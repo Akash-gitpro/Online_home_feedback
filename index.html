@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Home Device Feedback</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef2f3;
+      padding: 20px;
+    }
+    .feedback-container {
+      background-color: #fff;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="feedback-container">
+    <h2>Smart Home Device Feedback</h2>
+    <form>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="device">Device Type</label>
+      <select id="device" name="device" required>
+        <option value="">Select a device</option>
+        <option value="smart-light">Smart Light</option>
+        <option value="smart-speaker">Smart Speaker</option>
+        <option value="smart-thermostat">Smart Thermostat</option>
+        <option value="security-camera">Security Camera</option>
+      </select>
+
+      <label for="rating">Rating (1 to 5)</label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here..."></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+</body>
+</html>
